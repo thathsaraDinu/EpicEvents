@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Link, useNavigate } from "react-router-dom";
 import MainMenu from "./Components/MainMenu";
+import Footer from "./Components/Footer";
 
 function App() {
   const events = [
@@ -37,10 +38,10 @@ function App() {
               detail with precision and care
             </div>
             <div></div>
-            <div className="inline-block sm:mt-8 px-4 py-3 rounded-md bg-blue-800 text-white">
+            <div className="cursor-pointer inline-block sm:mt-8 px-4 py-3 rounded-md bg-blue-700 hover:bg-blue-800 text-white">
               Get Started!
             </div>
-            <div className="sm:inline hidden ml-10 inline-block mt-8 px-4 py-3 rounded-md bg-white text-black">
+            <div className="hover:bg-blue-200 cursor-pointer sm:inline hidden ml-10 inline-block mt-8 px-4 py-3 rounded-md bg-white text-black">
               Lean More
             </div>
           </div>
@@ -61,7 +62,7 @@ function App() {
             aliquid odio laboriosam labore consequuntur?
           </div>
           <div className="mt-6">
-            <div className="py-2 px-3 rounded-md  inline bg-blue-800 text-white ">
+            <div className="cursor-pointer py-2 px-3 rounded-md  inline bg-blue-700 hover:bg-blue-800  text-white ">
               Button
             </div>
           </div>
@@ -79,10 +80,10 @@ function App() {
             aliquid odio laboriosam labore consequuntur?
           </div>
           <div className="mt-6">
-            <div className="py-2 px-3 rounded-md  inline bg-blue-800 text-white ">
+            <div className="cursor-pointer py-2 px-3 rounded-md  inline bg-blue-700 text-white hover:bg-blue-800">
               Button
             </div>
-            <div className="py-2 ml-5 px-3 rounded-md  inline bg-white-800 text-black border-2 ">
+            <div className="cursor-pointer py-2 ml-5 px-3 rounded-md  inline bg-white-800 text-black border-2 hover:border-black">
               Button
             </div>
           </div>
@@ -95,9 +96,9 @@ function App() {
         </div>
       </div>
 
-      <div className="features bg-gray-100 p-10 pb-20 ">
+      <div className="features bg-gray-200 p-10 pb-20 ">
         <div className="w-full">
-          <div className="text-3xl p-5 w-full font-bold text-center">
+          <div className="text-3xl pb-10  w-full font-bold text-center">
             Features
           </div>
           <div className="p-4 gap-10 w-full flex justify-center flex-wrap">
@@ -114,7 +115,7 @@ function App() {
                 odio repudiandae incidunt iure sit maxime.
               </div>
               <div className=" px-5 flex justify-center mb-5">
-                <button className="p-2 bg-blue-200 inline-block rounded-md  ">
+                <button className="cursor-pointer block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
                   More Details
                 </button>
               </div>
@@ -132,7 +133,7 @@ function App() {
                 odio repudiandae incidunt iure sit maxime.
               </div>
               <div className="flex px-5  justify-center mb-5">
-                <button className="p-2 bg-blue-200 inline-block rounded-md  ">
+                <button className="cursor-pointer block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
                   More Details
                 </button>
               </div>
@@ -154,7 +155,7 @@ function App() {
                   data-modal-target="default-modal"
                   data-modal-toggle="default-modal"
                   type="button"
-                  className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  "
+                  className="cursor-pointer block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
                 >
                   More Details
                 </button>
@@ -227,7 +228,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-50  flex justify-between min-h-[50vh] py-10">
+      <div className="bg-white  flex justify-between min-h-[50vh] ">
         <div className="text-left px-20 w-full flex flex-col justify-center py-2 gap-5">
           <div className="font-sans font-bold text-5xl">Mission</div>
           <div className="text-2xl ">
@@ -241,16 +242,16 @@ function App() {
             tenetur nisi ea.
           </div>
         </div>
-        <div className="py-20 px-10 bg-gray-200 hidden lg:block">
+        <div className="py-20 px-10 bg-gray-400 hidden xl:block">
           <img
             src="/pexels-fauxels-3183197.jpg"
             className="cover min-w-[50vh] max-w-[80vh] "
           ></img>
         </div>
       </div>
-      <div className="p-10 pt-20 flex flex-col items-center">
-        <div className="  text-3xl pb-5 ">Our Clients</div>
-        <div className="flex gap-10 items-center justify-center ">
+      <div className="p-10 bg-gray-100 py-20 flex flex-col items-center">
+        <div className="  text-3xl pb-5 font-bold">Our Clients</div>
+        <div className="flex gap-20 items-center justify-center ">
           <div>
             <img src="/youtube-new-155631998.webp" className="w-[20vh]"></img>
           </div>
@@ -285,6 +286,7 @@ function App() {
           <div className="text-gray-500">Lorem, ipsum dolor.</div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
