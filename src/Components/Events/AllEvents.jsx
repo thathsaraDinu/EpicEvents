@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import MainMenu from "../MainMenu";
 import Footer from "../Footer";
+import getApiUrl from "../getApiUrl";
 
 const AllEvents = () => {
   const [events, setEvents] = useState([]);
   const [fEvents, setFEvents] = useState([]);
 
+  const apiUrl = getApiUrl();
   useEffect(() => {
     const even = async () => {
       let array1 = [];
-      await fetch("http://localhost:3001/events")
+      await fetch(apiUrl + "events")
         .then((response) => response.json())
         .then((data) => {
           setEvents(data);

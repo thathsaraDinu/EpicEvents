@@ -2,13 +2,14 @@ import { Link, useNavigate } from "react-router-dom";
 import MainMenu from "../MainMenu";
 import { useRef, useState } from "react";
 import Footer from "../Footer";
+import getApiUrl from "../getApiUrl";
 
 function CreateEvent() {
   const navigate = useNavigate();
   const [noField, setNoField] = useState("");
   const [image, setImage] = useState();
   const formRef = useRef(null);
-
+const apiUrl = getApiUrl();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -28,7 +29,7 @@ function CreateEvent() {
     }
     console.log(formData.get("image"));
     try {
-      const response = await fetch("http://localhost:3001/eventcreate", {
+      const response = await fetch(apiUrl + "eventcreate", {
         method: "POST",
 
         body: formData,
