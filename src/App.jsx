@@ -249,9 +249,9 @@ function App() {
           ></img>
         </div>
       </div>
-      <div className="p-10 bg-gray-100 py-20 flex flex-col items-center">
+      <div className="p-5 md:p-10 bg-gray-100 py-20 flex flex-col items-center">
         <div className="  text-3xl pb-5 font-bold">Our Clients</div>
-        <div className="flex gap-20 items-center justify-center ">
+        <div className="flex gap-5 md:gap-20 items-center justify-center ">
           <div>
             <img src="/youtube-new-155631998.webp" className="w-[20vh]"></img>
           </div>
@@ -269,14 +269,15 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center flex-wrap p-20">
+      <div className="flex justify-center items-center flex-wrap sm:p-20">
         <div>
           <img
             src="/RLplF55e_400x400.jpg"
-            className="rounded-xl w-[20rem] h-[20rem]"
+
+            className="rounded-xl w-[20rem] h-[20rem] object-cover"
           ></img>
         </div>
-        <div className="flex flex-col  p-5 pl-20  items-left justify-center ">
+        <div className="flex flex-col  p-10 md:pl-20  items-center justify-center ">
           <div className="text-2xl font-bold max-w-[30rem] pb-5">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
             blanditiis cumque eos aut, facere temporibus nam suscipit dolores
